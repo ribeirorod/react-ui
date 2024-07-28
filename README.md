@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# ReactJS Base Template
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a work-in-progress (WIP) ReactJS base template designed to minimize the need for third-party libraries. It aims to provide a solid foundation for building React applications with custom-built components and functionality.
 
-## Available Scripts
+## Current State
 
-In the project directory, you can run:
+The project is under active development and is not yet ready for production use. It includes several core components and features that are being refined and expanded.
 
-### `npm start`
+## Key Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **BaseComponent**: A foundational component that serves as the basis for other UI components, providing consistent styling options and theme integration.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Container**: A versatile component used for wrapping and styling sections of the application.
 
-### `npm test`
+3. **Button**: A customizable button component with support for different states.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **InputField**: A styled input field component for user input.
 
-### `npm run build`
+5. **Card**: A component for displaying grouped content with consistent styling.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Sidebar**: A collapsible panel for navigation links.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. **NavBar**: A navigation bar component for the header section.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+8. **ErrorBoundary**: A component for handling and displaying errors gracefully.
 
-### `npm run eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Responsive design with mobile-first approach
+- Theme support (light and dark modes)
+- Dynamic form generation
+- PDF display capabilities
+- State management using Redux
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to Use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+As this is a WIP, the usage instructions are subject to change. However, you can start by cloning the repository and installing the dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone <repository-url>
+cd <project-directory>
+npm install
+```
 
-## Learn More
+To run the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+The project follows a standard React application structure:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+  components/
+  handlers/
+  slices/
+  App.js
+  index.js
+  store.js
+```
 
-### Analyzing the Bundle Size
+## Current Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Some components may not be fully implemented or tested
+- Documentation is limited and evolving
+- Third-party dependencies may still be present but are being minimized
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+As this is a personal project in development, contributions are not currently being accepted. However, feedback and suggestions are welcome.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is private and does not have a specific license at this time.
 
-### Deployment
+## Future Plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Complete implementation of all base components
+- Improve documentation and usage examples
+- Implement comprehensive testing
+- Optimize performance and bundle size
+- Create a demo application showcasing all components
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please note that this project is in active development, and significant changes may occur as it progresses.
