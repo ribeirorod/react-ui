@@ -1,0 +1,164 @@
+:root {
+  /* Color Palette */
+  --color-primary: #f8f9fa;
+  --color-secondary: #d2691e;
+  --color-success: #28a745;
+  --color-danger: #c62828;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+
+  /* --color-primary: #1e1e1e;
+  --color-secondary: #252526;
+  --color-tertiary: #2d2d2d;
+  --color-accent: #d2691e;
+  --color-text-primary: #cccccc;
+  --color-text-secondary: #9d9d9d;
+  --color-text-tertiary: #6e6e6e;
+  --color-border: #3e3e3e;
+  
+  --ui-sidebar-background: #252526;
+  --ui-sidebar-item-hover: #37373d;
+  --ui-header-background: #3c3c3c;
+  --ui-header-text: #cccccc;
+  --ui-input-background: #3c3c3c;
+  --ui-input-text: #cccccc;
+  --ui-input-placeholder: #808080;
+  --ui-button-primary: #0e639c;
+  --ui-button-primary-hover: #1177bb;
+  --ui-button-text: #ffffff; */
+
+
+    /* Add hover color variations */
+  --color-primary-hover: #e2e6ea;
+  --color-secondary-hover: #b84f16;
+  --color-success-hover: #1e7e34;
+  --color-danger-hover: #9b1f1f;
+  --color-warning-hover: #d39e00;
+  --color-info-hover: #117a8b;
+  --color-light-hover: #e2e6ea;
+  --color-dark-hover: #23272b;
+  --color-white-hover: #e6e6e6;
+  --color-black-hover: #1a1a1a;
+  --color-gray-100-hover: #e2e6ea;
+  --color-gray-200-hover: #dae0e5;
+  --color-gray-300-hover: #cfd3d7;
+  --color-gray-400-hover: #bfc4c9;
+  --color-gray-500-hover: #9da5ad;
+  --color-gray-600-hover: #57606a;
+  --color-gray-700-hover: #343a40;
+  --color-gray-800-hover: #23272b;
+  --color-gray-900-hover: #121416;
+
+  /* Dark Mode Color Palette */
+  --dark-color-background: #1e1e1e;
+  --dark-color-surface: #252526;
+  --dark-color-text: #cccccc;
+  --dark-color-border: #3e3e42;
+  --dark-color-primary: #0e639c;
+  --dark-color-primary-hover: #1177bb;
+  --dark-color-secondary: #d2691e;
+  --dark-color-secondary-hover: #e07a2e;
+  --dark-color-danger: #f44336;
+  --dark-color-danger-hover: #f55a4e;
+  --dark-color-button-bg: #2d2d30;
+  --dark-color-button-hover-bg: #3e3e42;
+  --dark-color-container-bg: #252526;
+  --dark-color-card-bg: #2d2d30;
+  --dark-color-card-hover-border: #3e3e42;
+  --dark-color-navbar-bg: #252526;
+  --dark-color-sidebar-bg: #252526;
+  --dark-color-sidebar-item-hover-bg: #37373d;
+
+    /* Typography */
+  --font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+  --font-size-base: 16px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.75rem;
+  --font-size-h4: 1.5rem;
+  --font-size-h5: 1.25rem;
+  --font-size-h6: 1rem;
+  --font-size-body1: 1rem;
+  --font-size-body2: 0.875rem;
+  --font-size-button: 0.875rem;
+  --font-size-caption: 0.75rem;
+
+  /* Spacing */
+  --spacing-unit: 0.25rem;
+
+  /* Breakpoints */
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 960px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1920px;
+
+  /* Shadows */
+  --shadow-none: none;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 15px 25px rgba(0, 0, 0, 0.15), 0 5px 10px rgba(0, 0, 0, 0.05);
+
+  /* Border Radius */
+  --border-radius-none: 0;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-radius-full: 9999px;
+
+  /* Z-index */
+  --z-index-mobile-stepper: 1000;
+  --z-index-app-bar: 1100;
+  --z-index-drawer: 1200;
+  --z-index-modal: 1300;
+  --z-index-snackbar: 1400;
+  --z-index-tooltip: 1500;
+
+  /* Transitions */
+  --transition-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --transition-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --transition-easing-sharp: cubic-bezier(0.4, 0, 0.6, 1);
+  --transition-duration-shortest: 150ms;
+  --transition-duration-shorter: 200ms;
+  --transition-duration-short: 250ms;
+  --transition-duration-standard: 300ms;
+  --transition-duration-complex: 375ms;
+  --transition-duration-entering-screen: 225ms;
+  --transition-duration-leaving-screen: 195ms;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

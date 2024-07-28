@@ -1,0 +1,53 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-size-large: 2.5rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+  
+    --color-primary: #000000;
+    --color-secondary: #B0B0B0;
+    --color-accent: #FFD700;
+    --color-background: #FFFFFF;
+    --color-border: #E0E0E0;
+    --color-success: #34C759;
+    --color-danger: #FF3B30;
+  
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+  
+    --border-radius-small: 0.25rem;
+    --border-radius-medium: 0.5rem;
+    --border-radius-large: 1rem;
+  }
+  
+  .style-guide {
+    padding: 2rem;
+  }
+  
+  .color-swatch {
+    width: 100px;
+    height: 50px;
+    margin: 0.5rem 0;
+    border: 1px solid var(--color-border);
+  }
+  
+  .spacing-box {
+    width: 100px;
+    height: 50px;
+    margin: 0.5rem 0;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+  }
+  
+  .rounding-box {
+    width: 100px;
+    height: 50px;
+    margin: 0.5rem 0;
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+  }
+
+  
