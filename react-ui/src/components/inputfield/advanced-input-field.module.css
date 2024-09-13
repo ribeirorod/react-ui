@@ -1,0 +1,17 @@
+.advancedInputField {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .textInput {
+    flex-grow: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-small);
+  }
+  
+  .micButton {
+    min-width: 120px;
+  }

@@ -3,7 +3,6 @@ import { ThemeProvider as StyledThemeProvider } from "styled-components";
 import DefaultButton from "./components/buttons/default-button";
 import Card from "./components/cards/default-card";
 import CodeBox from "./components/codebox/CodeBox";
-import Container from "./components/container/container";
 import InputSpeechField from "./components/inputfield/input-speech-field";
 import NavBar from "./components/navbar/navbar";
 import Sidebar from "./components/sidebar/sidebar";
@@ -11,6 +10,9 @@ import { ThemeProvider, useTheme } from "./context/ThemeContext";
 import baseTheme from "./styles/base-theme";
 import darkTheme from "./styles/dark-theme";
 import { GlobalStyles } from "./styles/global-styles";
+import {default as BaseContainer} from "./components/container/container";
+import AdvancedInputField from "./components/inputfield/AdvancedInput";
+// import {BaseContainer} from 'react-simple-components';
 
 const codeText = `
 const baseTheme = {
@@ -84,11 +86,11 @@ const AppContent = () => {
           onUserClick={handleUserClick}
         />
       </div>
-      <Container
+      <BaseContainer
         sx={{ backgroundColor: currentTheme.colors.background }}
         rounding="none"
       >
-        <Container>
+        <BaseContainer>
           <h1>Components Showcase</h1>
 
           <section>
@@ -108,31 +110,35 @@ const AppContent = () => {
             <InputSpeechField />
           </section>
           <section>
+            <h2>Advanced Input Field with Speech Recognition</h2>
+            <AdvancedInputField  />
+          </section>
+          <section>
             <h2>Cards in Grid Format</h2>
-            <Container elevation="none" layout="grid">
+            <BaseContainer elevation="none" layout="grid">
               {[1, 2, 3, 4, 5, 6].map((num) => (
                 <Card key={num}>
                   <h3>Card {num}</h3>
                   <p>This is a sample card in grid format.</p>
                 </Card>
               ))}
-            </Container>
+            </BaseContainer>
           </section>
           <section>
             <h2>Cards in Horizontal List</h2>
-            <Container elevation="none" layout="column">
+            <BaseContainer elevation="none" layout="column">
               {[1, 2, 3, 4, 5].map((num) => (
                 <Card key={num} sx={{ minWidth: "200px" }}>
                   <h3>Card {num}</h3>
                   <p>This is a sample card in a horizontal list.</p>
                 </Card>
               ))}
-            </Container>
+            </BaseContainer>
           </section>
 
           <section>
             <h2>Clickable Icons for Sidebars</h2>
-            <Container sx={{ display: "flex", justifyContent: "space-around" }}>
+            <BaseContainer sx={{ display: "flex", justifyContent: "space-around" }}>
               {["left", "right", "top", "bottom"].map((position) => (
                 <DefaultButton
                   key={position}
@@ -142,15 +148,15 @@ const AppContent = () => {
                   Toggle {position} sidebar
                 </DefaultButton>
               ))}
-            </Container>
+            </BaseContainer>
           </section>
 
           <section>
             <h2>Code Box</h2>
             <CodeBox text={codeText} lang="javascript" />
           </section>
-        </Container>
-        <Container>
+        </BaseContainer>
+        <BaseContainer>
         {Object.entries(visibleSidebars).map(
           ([position, isVisible]) =>
             isVisible && (
@@ -179,9 +185,9 @@ const AppContent = () => {
               </Sidebar>
             )
         )}
-        </Container>
+        </BaseContainer>
 
-      </Container>
+      </BaseContainer>
     </StyledThemeProvider>
   );
 };
